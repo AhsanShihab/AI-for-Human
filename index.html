@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
-    <title>Template</title>
+    <title>AI for Human</title>
 
     <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Projects</a>
@@ -32,9 +32,80 @@
                     <a class="nav-link" href="index.html">Contact Us</a>
                 </li>
             </ul>
-            <button class="btn btn-primary mr-5">Donate</button>
+            <button class="btn btn-primary mr-5" data-toggle="modal" data-target="#donation">Donate</button>
         </div>
     </nav>
+    <!-- Donation Modal -->
+    <div class="modal fade" id="donation"  role="dialog">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="content">
+            <div class="modal-content">
+                <div class="modal-header bg-primary" style="color: floralwhite">
+                    <h5 class="modal-title">Support AI for Human</h5>
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <p>This website is made for demonstration purpose only for front UI. Nothing you enter in this form will be processed.</p>
+                        <div class="form-group row">
+                            <label for="name" class="col-12 col-form-label">Your Name</label>
+                            <div class="col-6">
+                                <input class="form-control" type="text" name="name" id="firstName" placeholder="First Name" required>
+                            </div>
+                            <div class="col-6">
+                                <input class="form-control" type="text" name="name" id="lasttName" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="contact" class="col-12 col-form-label">Contact info</label>
+                            <div class="col-6">
+                                <input class="form-control" type="email" name="contact" id="email" placeholder="email">
+                            </div>
+                            <div class="col-6">
+                                <input class="form-control" type="tell" name="name" id="phone" placeholder="Phone">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="location" class="col-12 col-form-label">Your Location</label>
+                            <div class="col-6">
+                                <input class="form-control" type="text" name="location" id="city" placeholder="city">
+                            </div>
+                            <div class="col-6">
+                                <input class="form-control" type="text" name="location" id="country" placeholder="Country">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="cardHolder" class="col-12 col-form-label">Name on Card</label>
+                            <div class="col-6">
+                                <input class="form-control" type="text" name="card" id="cardHolder" placeholder="Name on Card">
+                            </div>
+                            <label for="cardHolder" class="col-12 col-form-label">Card Number</label>
+                            <div class="col-6">
+                                <input class="form-control" type="text" name="card" id="cardNum" placeholder="123456">
+                            </div>
+                            <label for="cardHolder" class="col-12 col-form-label">Card Date</label>
+                            <div class="col-6">
+                                <input type="date" class="form-control" id="date" name="timedate" value="2000-01-01" placeholder="Date">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="amount" class="col-12 col-form-label">What amount would you like to donate?</label>
+                            <div class="col-12 col-md-6">
+                                <input class="form-control" type="number" placeholder="$" name="amount" id="amount">
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Confirm</button>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
     <div class="jumbotron jumbotron-fluid mt-5">
         <div class="container">
             <div class="row">
@@ -50,13 +121,13 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row row-content">
             <div class="col-md-8 offset-md-2">
                 <h1 class="text-center"> Our Mission </h1>
                 <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row row-content">
             <div class="col-12 col-md-6">
                 <h1>Partners</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -67,7 +138,7 @@
                 </div>
             </div>
         </div>
-        <div class="row offset-1 offset-md-3">
+        <div class="row row-content offset-1 offset-md-3">
             <div class="col-3">
                 <img class="logo offset-1" src="img/coursera-logo.png" alt="coursera">
             </div>
@@ -78,13 +149,13 @@
                 <img class="logo offset-1" src="img/nvidia-logo.png" alt="nvidia">
             </div>
         </div>
-        <div class="row">
+        <div class="row row-content">
             <div class="col">
                 <h1 class="text-center">Recognitions</h1>
             </div>
 
         </div>
-        <div class="row">
+        <div class="row row-content">
             <div class="carousel slide" data-ride="carousel" id="recognitions">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
