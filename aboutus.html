@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
-    <title>Template</title>
+    <title>About Us</title>
 
     <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -14,10 +14,156 @@
 
 </head>
 <body>
-    <h1> Same Template</h1>
-    <p>This is a template project</p>
-    <footer>
+        <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">AI for Human</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+            </ul>
+            <button class="btn btn-primary mr-5" data-toggle="modal" data-target="#donation">Donate</button>
+        </div>
+    </nav>
+            <!-- Donation Modal -->
+    <div class="modal fade" id="donation"  role="dialog">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="content">
+            <div class="modal-content">
+                <div class="modal-header bg-primary" style="color: floralwhite">
+                    <h5 class="modal-title">Support AI for Human</h5>
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <p>This website is made for demonstration purpose only for front UI. Nothing you enter in this form will be processed.</p>
+                        <div class="form-group row">
+                            <label for="name" class="col-12 col-form-label">Your Name</label>
+                            <div class="col-6">
+                                <input class="form-control" type="text" name="name" id="firstName" placeholder="First Name">
+                            </div>
+                            <div class="col-6">
+                                <input class="form-control" type="text" name="name" id="lasttName" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="contact" class="col-12 col-form-label">Contact info</label>
+                            <div class="col-6">
+                                <input class="form-control" type="email" name="contact" id="email" placeholder="email">
+                            </div>
+                            <div class="col-6">
+                                <input class="form-control" type="tell" name="name" id="phone" placeholder="Phone">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="location" class="col-12 col-form-label">Your Location</label>
+                            <div class="col-6">
+                                <input class="form-control" type="text" name="location" id="city" placeholder="city">
+                            </div>
+                            <div class="col-6">
+                                <input class="form-control" type="text" name="location" id="country" placeholder="Country">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="cardHolder" class="col-12 col-form-label">Name on Card</label>
+                            <div class="col-6">
+                                <input class="form-control" type="text" name="card" id="cardHolder" placeholder="Name on Card">
+                            </div>
+                            <label for="cardHolder" class="col-12 col-form-label">Card Number</label>
+                            <div class="col-6">
+                                <input class="form-control" type="text" name="card" id="cardNum" placeholder="123456">
+                            </div>
+                            <label for="cardHolder" class="col-12 col-form-label">Card Date</label>
+                            <div class="col-6">
+                                <input type="date" class="form-control" id="date" name="timedate" value="2000-01-01" placeholder="Date">
+                            </div>
+                        </div>
 
+                        <div class="form-group row">
+                            <label for="amount" class="col-12 col-form-label">What amount would you like to donate?</label>
+                            <div class="col-12 col-md-6">
+                                <input class="form-control" type="number" placeholder="$" name="amount" id="amount">
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Confirm</button>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Body -->
+    <div class="container">
+        <h1> Hello</h1>
+        <p>Hello from About Us</p>
+    </div>
+
+
+    <!-- Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <ul class="list-unstyled footer-link">
+                        <li><a class="footer-nav" href="/">Home</a></li>
+                        <li><a class="footer-nav" href="projects.html">Projects</a></li>
+                        <li><a class="footer-nav" href="aboutus.html">About US</a></li>
+                        <li><a class="footer-nav" href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-5 col-lg-3">
+                    <h4>Address</h4>
+                    <p>123 Imaginary lane, California, USA.</p>
+                    <p>Email: <a href="mailto:">aiforhuman@xyz.com</a></p>
+                    <p>Phone: <a href="tel:123456789"> <i class="fa fa-phone"> 123-456-789</i></a> </p>
+                </div>
+
+                <div class="col-12 col-md-5 col-lg-3 order-2 order-md-1">
+                    <br>
+                    <p class="text-center">Stay Connected with us in social media</p>
+                    <br>
+                    <div class="col-9 col-sm-6 col-md-10 col-lg-12 offset-3 offset-sm-3 offset-md-1 offset-lg-0">
+                        <a class="btn btn-social-icon btn-twitter" href="http://www.twitter.com/" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://www.youtube.com" target="_blank"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-8 col-lg-4 offset-md-2 offset-lg-0 order-1 order-md-2">
+                    <br>
+                    <p class="text-center">Sign Up for Newsletters</p>
+                    <div class="input-group offset-md-1">
+                        <input type="email" class="form-control" placeholder="john@xyz.com" aria-label="Recipient's email" aria-describedby="Newsletters">
+                        <div class="input-group-append">
+                          <button class="btn btn-danger" type="button" id="subscribe">Subscribe</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="text-center"><i class="fa fa-copyright">All rights reserved to Nazmul Ahsan Shihab</i></p>
+                    <p class="text-center">All logos are registered tradmarks to associated</i></p>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
