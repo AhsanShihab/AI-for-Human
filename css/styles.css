@@ -17,3 +17,15 @@
 .logo {
   width: auto;
   max-width: 90px; }
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 10px;
+  text-indent: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: #111010;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.5); }
