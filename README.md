@@ -1,47 +1,9 @@
-# Bootstrap Project starter template
+# Bootstrap Project
 
-This repository is configured with some node modules for developing and building Bootstrap project. To get started download or clone the repository
-
-```bash
-git clone https://github.com/AhsanShihab/Bootstrap-project-template.git
-```
-
-Then run,
-
-```bash
-npm install
-```
-
-## Linux or MacOS
-The scripts in `package.json` file is configured for Windows. If you are on MacOS or Linux, replace all the \\" (back slash-double quote) with \' (single qoute).
-
-## New HTML files
-The project is build with two example html files `index.html` and `aboutus.html`. You should copy the starter code to your new pages for proper import of all the necessary files. As you add new pages, insert them in `usemin` script in `package.json` file as following.
-
-```
-&& usemin your_page.html -d dist --htmlmin -o dist/your_page.html
-```
-
-## CSS
-Use sass for custom styling your webpage. The `styles.scss` file will be automatically converted to `styles.css`. If you want to edit css file directly, create another css file with different name and import that in your html file.
-
-## Dev and Build
-
-For development run
-```bash
-npm start
-```
-
-For build, run
-
-```bash
-npm build
-```
-
-Build will put all the built files in `dist` folder.
+This is my capstone project for *Front-End Web UI Frameworks and Tools: Bootstrap 4* course. This is the first of the four courses in Coursera's *Full Stack Web Development Specialization*
 
 
-## Modules
+## Modules Used
 ### Bootstrap
 For designing responsive website UI for different screen sizes
 
