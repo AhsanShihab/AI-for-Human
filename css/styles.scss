@@ -4,7 +4,14 @@ $text-white: floralwhite;
 .jumbotron{
     background-color: $gray-background;
     color: $text-white;
+    
 }
+
+.jumbotron-secondary {
+    background-color: rgb(34, 63, 117);
+}
+
+
 .footer{
     background-color: $gray-background;
     color: black;
