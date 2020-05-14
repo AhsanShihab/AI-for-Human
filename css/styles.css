@@ -4,9 +4,12 @@
 
 .footer {
   background-color: #919191;
-  color: floralwhite;
+  color: black;
   margin: 0px auto;
-  padding: 10px; }
+  padding: 10px;
+  padding-top: 20px; }
+  .footer .footer-nav {
+    color: black; }
 
 .row {
   padding-bottom: 50px; }

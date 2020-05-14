@@ -7,9 +7,14 @@ $text-white: floralwhite;
 }
 .footer{
     background-color: $gray-background;
-    color: $text-white;
+    color: black;
     margin: 0px auto;
     padding: 10px;
+    padding-top: 20px;
+
+    .footer-nav {
+        color: black;
+    }
 }
 
 .row{
