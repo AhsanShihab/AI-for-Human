@@ -1,6 +1,6 @@
 # Bootstrap Project
 
-This is my capstone project for *Front-End Web UI Frameworks and Tools: Bootstrap 4* course. This is the first of the four courses in Coursera's *Full Stack Web Development Specialization*
+This is a demo project in Bootstrap. The project contains a website for an imaginary organisation named "AI for Human". See the live website from this [link](https://ahsanshihab.github.io/AI-for-Human/)
 
 
 ## Modules Used
